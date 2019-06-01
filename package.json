@@ -1,0 +1,59 @@
+{
+  "name": "use-conditional-effect",
+  "version": "0.0.0-semantically-released",
+  "description": "Replacement for React.useEffect with optional comparison function",
+  "main": "dist/use-conditional-effect.cjs.js",
+  "module": "dist/use-conditional-effect.esm.js",
+  "engines": {
+    "node": "> 4",
+    "npm": "> 3"
+  },
+  "scripts": {
+    "add-contributor": "kcd-scripts contributors add",
+    "build": "kcd-scripts build --bundle",
+    "lint": "kcd-scripts lint",
+    "test": "kcd-scripts test",
+    "test:update": "npm test -- --updateSnapshot --coverage",
+    "validate": "kcd-scripts validate",
+    "setup": "npm install && npm run validate -s"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "author": "Alex Krolick <alexander.krolick+github@gmail.com> (https://alexkrolick.com/)",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/runtime": "^7.4.5",
+    "kcd-scripts": "^1.4.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-hooks-testing-library": "0.3.5",
+    "react-test-renderer": "^16.8.6"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "kcd-scripts pre-commit"
+    }
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/kcd-scripts/eslint.js"
+  },
+  "eslintIgnore": [
+    "node_modules",
+    "coverage",
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexkrolick/use-conditional-effect.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alexkrolick/use-conditional-effect/issues"
+  },
+  "homepage": "https://github.com/alexkrolick/use-conditional-effect#readme"
+}
