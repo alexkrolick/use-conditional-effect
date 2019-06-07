@@ -21,7 +21,7 @@ function shallowEquals(a, b) {
 }
 
 function getArtificialDependency() {
-  return Math.random()
+  return {}
 }
 
 function useConditionalEffect(callback, dependencies, isEqual = shallowEquals) {
